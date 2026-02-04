@@ -98,10 +98,14 @@ Focus on something that would spark interesting philosophical or spiritual discu
             });
         }
 
-        // Parse the response
-        const headlineMatch = content.match(/HEADLINE:\s*(.+?)(?=SUMMARY:|$)/is);
-        const summaryMatch = content.match(/SUMMARY:\s*(.+?)(?=ANGLE:|$)/is);
-        const angleMatch = content.match(/ANGLE:\s*(.+?)$/is);
+        // Parse the response using RegExp constructor to avoid TS ES version issues
+        const headlineRegex = new RegExp('HEADLINE:\\s*(.+?)(?=SUMMARY:|$)', 'is');
+        const summaryRegex = new RegExp('SUMMARY:\\s*(.+?)(?=ANGLE:|$)', 'is');
+        const angleRegex = new RegExp('ANGLE:\\s*(.+?)$', 'is');
+
+        const headlineMatch = content.match(headlineRegex);
+        const summaryMatch = content.match(summaryRegex);
+        const angleMatch = content.match(angleRegex);
 
         const result = {
             headline: headlineMatch?.[1]?.trim() || content.split('\n')[0] || `${topic} developments`,
