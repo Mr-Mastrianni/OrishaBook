@@ -39,7 +39,7 @@ interface ChatSession {
 
 export function OrishaChat() {
   const [selectedOrisha, setSelectedOrisha] = useState<OrishaName | null>(null);
-  const [chatSessions, setChatSessions] = useState<Record<OrishaName, ChatSession>>({});
+  const [chatSessions, setChatSessions] = useState<Record<OrishaName, ChatSession>>({} as Record<OrishaName, ChatSession>);
   const [inputMessage, setInputMessage] = useState('');
   const [selectedTopic, setSelectedTopic] = useState<ChatTopic>('general');
   const [isLoading, setIsLoading] = useState(false);
