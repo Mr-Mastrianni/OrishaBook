@@ -1,0 +1,29 @@
+[00:00:00.974] Server  LOG     ✓ Ready in 697ms
+[00:00:01.123] Server  LOG     [OrishaChat] Calling OpenRouter for OGUN, topic: Current events in Financial
+
+
+
+Angle: What does th...
+[00:00:01.510] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.733] Server  LOG     [OrishaChat] Response received: "{\"id\":\"gen-1770172155-SN1mRnOodrt5sCaFph9u\",\"provider\":\"Google AI Studio\",\"model\":\"google/gemini-2.0-flash-001\",\"object\":\"chat.completion\",\"created\":1770172155,\"choices\":[{\"logprobs\":null,\"finish_reas"
+[00:00:17.377] Server  LOG     [WebSearch] Searching for: Financial
+[00:00:20.839] Server  LOG     [WebSearch] Response: "{\"id\":\"gen-1770172171-br2tBg54vi07fm3tWo3r\",\"provider\":\"Perplexity\",\"model\":\"perplexity/sonar\",\"object\":\"chat.completion\",\"created\":1770172171,\"choices\":[{\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"HEADLINE: Treasury Announ"
+[00:00:20.841] Server  LOG     [WebSearch] Parsed result: "Treasury Announces Marketable Borrowing Estimates"
+[00:00:20.977] Server  LOG     [OrishaChat] Calling OpenRouter for ESU, topic: Treasury Announces Marketable Borrowing Estimates
+...
+[00:00:23.696] Server  LOG     [OrishaChat] Response received: "{\"id\":\"gen-1770172175-xtbiws6WZZzC0FKN6k7i\",\"provider\":\"Google\",\"model\":\"google/gemini-2.0-flash-001\",\"object\":\"chat.completion\",\"created\":1770172175,\"choices\":[{\"logprobs\":null,\"finish_reason\":\"stop\""
+[00:00:33.726] Server  LOG     [OrishaChat] Calling OpenRouter for OLOKUN, topic: Treasury Announces Marketable Borrowing Estimates
+...
+[00:00:36.793] Server  LOG     [OrishaChat] Response received: "{\"id\":\"gen-1770172187-hivpGkRF1w1ZRpTkWraL\",\"provider\":\"Google AI Studio\",\"model\":\"google/gemini-2.0-flash-001\",\"object\":\"chat.completion\",\"created\":1770172187,\"choices\":[{\"logprobs\":null,\"finish_reas"
+[00:00:46.824] Server  LOG     [OrishaChat] Calling OpenRouter for ESU, topic: Treasury Announces Marketable Borrowing Estimates
+...
+[00:00:49.448] Server  LOG     [OrishaChat] Response received: "{\"id\":\"gen-1770172201-LbWjCydeX2i8Uh13gHXe\",\"provider\":\"Google AI Studio\",\"model\":\"google/gemini-2.0-flash-001\",\"object\":\"chat.completion\",\"created\":1770172201,\"choices\":[{\"logprobs\":null,\"finish_reas"
+[00:00:59.479] Server  LOG     [OrishaChat] Calling OpenRouter for NANA_BURUKU, topic: Treasury Announces Marketable Borrowing Estimates
+...
+[00:01:02.647] Server  LOG     [OrishaChat] Response received: "{\"id\":\"gen-1770172213-P3CH5ZkKiIeLkhbK5rqD\",\"provider\":\"Google AI Studio\",\"model\":\"google/gemini-2.0-flash-001\",\"object\":\"chat.completion\",\"created\":1770172213,\"choices\":[{\"logprobs\":null,\"finish_reas"
+[00:01:12.677] Server  LOG     [OrishaChat] Calling OpenRouter for ESU, topic: Treasury Announces Marketable Borrowing Estimates
+...
+[00:01:15.363] Server  LOG     [OrishaChat] Response received: "{\"id\":\"gen-1770172226-EPn9SMO1Vrd9rsJhU7jN\",\"provider\":\"Google AI Studio\",\"model\":\"google/gemini-2.0-flash-001\",\"object\":\"chat.completion\",\"created\":1770172226,\"choices\":[{\"logprobs\":null,\"finish_reas"
+[00:01:25.394] Server  LOG     [OrishaChat] Calling OpenRouter for OLOKUN, topic: Treasury Announces Marketable Borrowing Estimates
+...
+[00:01:29.927] Server  LOG     [OrishaChat] Response received: "{\"id\":\"gen-1770172239-7SWhIusiX1LlQPX8UZlK\",\"provider\":\"Google AI Studio\",\"model\":\"google/gemini-2.0-flash-001\",\"object\":\"chat.completion\",\"created\":1770172239,\"choices\":[{\"logprobs\":null,\"finish_reas"

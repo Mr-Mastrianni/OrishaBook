@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/kemet/ANUK/openclaw-orisha2/ori-cult/src/app/page.tsx"],"sourcesContent":["import { DailyOracleDashboard } from '@/components/dashboard/DailyOracle';\r\n\r\nexport default function Home() {\r\n  return <DailyOracleDashboard />;\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBAAO,oRAAC,4MAAoB;;;;;AAC9B"}}]
+}

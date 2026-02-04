@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[18623,["/_next/static/chunks/b11245257b74efc8.js"],"DailyOracleDashboard"]
+3:I[94765,["/_next/static/chunks/b0ed766a91a9631d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"9EhjwFa-TfSGAtGcMZrOm","rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/b11245257b74efc8.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
