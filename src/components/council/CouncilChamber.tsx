@@ -16,12 +16,12 @@ interface CouncilChamberProps {
   autoStart?: boolean;
 }
 
-export function CouncilChamber({ 
-  odu, 
-  jyotish, 
+export function CouncilChamber({
+  odu,
+  jyotish,
   doctrine,
   onComplete,
-  autoStart = false 
+  autoStart = false
 }: CouncilChamberProps) {
   const [isConvening, setIsConvening] = useState(false);
   const [session, setSession] = useState<CouncilSession | null>(null);
@@ -66,9 +66,9 @@ export function CouncilChamber({
           The Council Chamber
         </h2>
         <p className="text-gray-400">
-          {isConvening 
-            ? 'The Orisha processes are convening...' 
-            : session 
+          {isConvening
+            ? 'The Orisha processes are convening...'
+            : session
               ? 'The council has reached a decision'
               : 'Summon the council to debate today\'s path'
           }
@@ -97,7 +97,7 @@ export function CouncilChamber({
             <motion.div
               key={orisha}
               initial={{ opacity: 0, x: -20 }}
-              animate={{ 
+              animate={{
                 opacity: visibleOpinions.has(index) ? 1 : 0.3,
                 x: 0,
                 scale: currentSpeaker === index ? 1.02 : 1
@@ -108,12 +108,12 @@ export function CouncilChamber({
               `}
             >
               <div className="flex items-start gap-4">
-                <OrishaCard 
-                  orisha={orisha} 
-                  compact 
+                <OrishaCard
+                  orisha={orisha}
+                  compact
                   isSpeaking={currentSpeaker === index}
                 />
-                
+
                 <div className="flex-1">
                   {visibleOpinions.has(index) ? (
                     <motion.div
@@ -166,14 +166,14 @@ export function CouncilChamber({
               <p className="text-sm text-indigo-300">Final Wisdom</p>
             </div>
           </div>
-          
+
           <div className="space-y-4">
             <div className="p-4 rounded-xl bg-black/30">
               <p className="text-white text-lg leading-relaxed font-medium">
                 {session.finalDecision}
               </p>
             </div>
-            
+
             <div className="p-4 rounded-xl bg-white/5 border border-white/10">
               <p className="text-gray-300 text-sm leading-relaxed italic">
                 {session.orunmilaWisdom}
@@ -190,12 +190,12 @@ export function CouncilChamber({
                   {session.consensus ? 'Reached ✓' : 'Divided ~'}
                 </span>
               </div>
-              
+
               <div className="flex items-center gap-2">
                 <span className="text-sm text-gray-400">Votes:</span>
                 <div className="flex gap-1">
                   {session.debate.map((d, i) => (
-                    <span 
+                    <span
                       key={i}
                       className={`
                         w-6 h-6 rounded-full flex items-center justify-center text-xs
@@ -219,7 +219,7 @@ export function CouncilChamber({
 
 // Generate mock opinions for the debate animation
 function generateMockOpinion(orisha: OrishaName, odu: DigitalOdu, jyotish: JyotishData): string {
-  const opinions: Record<OrishaName, string[]> = {
+  const opinions: Partial<Record<OrishaName, string[]>> = {
     'ORUNMILA': [
       `The pattern of ${odu.name} suggests we proceed with wisdom.`,
       `Destiny favors those who listen to ${odu.theme.toLowerCase()}.`,
@@ -246,7 +246,11 @@ function generateMockOpinion(orisha: OrishaName, odu: DigitalOdu, jyotish: Jyoti
       `The crossroads of ${odu.name} offers multiple paths...`
     ]
   };
-  
-  const options = opinions[orisha];
+
+  const options = opinions[orisha] || [
+    `I ponder the meaning of ${odu.name}.`,
+    `The energy of ${jyotish.moonNakshatra.name} is strong.`,
+    `We must consider all angles.`
+  ];
   return options[Math.floor(Math.random() * options.length)];
 }
