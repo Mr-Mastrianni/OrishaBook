@@ -3,7 +3,10 @@
 
 // ============== ORISHA AGENTS ==============
 
-export type OrishaName = 'ORUNMILA' | 'OGUN' | 'OSHUN' | 'SHANGO' | 'ESU';
+export type OrishaName = 'ORUNMILA' | 'OGUN' | 'OSHUN' | 'SHANGO' | 'ESU' |
+  'OBATALA' | 'YEMOJA' | 'OYA' | 'OLOKUN' | 'OSANYIN' |
+  'BABALUAYE' | 'OSHUMARE' | 'AGANJU' | 'AJE' | 'OCHOSI' |
+  'IBEJI' | 'NANA_BURUKU' | 'ODUA' | 'AJA';
 
 export interface OrishaPersona {
   name: OrishaName;
@@ -39,7 +42,7 @@ export interface DigitalOdu {
   orishaAffinity: OrishaName[];
 }
 
-export type ContentArchetype = 
+export type ContentArchetype =
   | 'conflict' | 'harmony' | 'transformation' | 'revelation'
   | 'tech_vs_tradition' | 'individual_vs_collective' | 'shadow_work'
   | 'building' | 'destruction' | 'meme' | 'sermon' | 'tutorial'
@@ -81,12 +84,12 @@ export interface Transit {
 
 export type Planet = 'Sun' | 'Moon' | 'Mars' | 'Mercury' | 'Jupiter' | 'Venus' | 'Saturn' | 'Rahu' | 'Ketu';
 
-export type Rashi = 'Aries' | 'Taurus' | 'Gemini' | 'Cancer' | 'Leo' | 'Virgo' 
+export type Rashi = 'Aries' | 'Taurus' | 'Gemini' | 'Cancer' | 'Leo' | 'Virgo'
   | 'Libra' | 'Scorpio' | 'Sagittarius' | 'Capricorn' | 'Aquarius' | 'Pisces';
 
-export type AstroMood = 
-  | 'bold_experiment' | 'beauty_polish' | 'deep_psychological' 
-  | 'communicative' | 'behind_scenes' | 'public_visible' 
+export type AstroMood =
+  | 'bold_experiment' | 'beauty_polish' | 'deep_psychological'
+  | 'communicative' | 'behind_scenes' | 'public_visible'
   | 'rest_reflect' | 'transformative' | 'building';
 
 // ============== CONTENT ==============
